@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <h2>Área de login do usuário</h2>
+  <form action="">
+    <label>Login:</label>
+    <input type="text" id="login" required>
+    <label> Senha: </label>
+    <input type="text" id="senha" required>
+    <input type="submit" id="enviar" value="Enviar" onclick="getLogin()">
+  </form>
+  <script>
+    function getLogin() {
+      let login = document.getElementById("login").value
+
+      let senha = document.getElementById("senha").value
+
+      if (login === "admin" && senha === "123") {
+        let url = "../aula01/index.html"
+        window.open(url)
+      } else {
+        alert("usuário não encontrado")
+      }
+    }
+  </script>
+</body>
+</html>
