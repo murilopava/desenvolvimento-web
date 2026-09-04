@@ -1,59 +1,128 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produtos ONG</title>
-  </head>
-  <style>
-    body {
-      background-color: #f4f4f4;
-      margin: 0px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <style>
+      body {
+        background-color: #f4f4f4;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-    header {
-      background-color: rgba(0, 0, 0, 0.722);
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
+      header {
+        background-color: rgba(0, 0, 0, 0.722);
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
 
-    .produto {
-      border: 1px solid black;
-      padding: 10px;
-      margin: 15px;
-      text-align: center;
-    }
+      .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+      }
 
-    .gallery {
-      display: flex;
-    }
+      .produto {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: center;
+        width: 300px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .produto img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .produto h2 {
+        font-size: 24px;
+      }
+
+      .produto p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      button {
+        background-color: #3d652e;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #2d4d20;
+      }
   </style>
+  </head>
   <body>
     <header>
       <h1>Nossos Produtos</h1>
     </header>
     <main>
       <div class="gallery">
+
         <div class="produto">
-          <h1>Produto 1</h1>
-          <img src="" alt="foto1" />
-          <p>Descrição do produto</p>
+          <h2>Caderno Solidário</h2>
+
+          <img 
+            src="./imagens/caderno-solidario.png" 
+            alt="Caderno sustentável com ilustração de árvore"
+          />
+
+          <p>
+            Um caderno sustentável perfeito para anotações, estudos e ideias.
+            Produzido com materiais de qualidade para inspirar pequenas atitudes
+            que podem transformar o mundo.
+          </p>
+
           <button>Comprar</button>
         </div>
+
         <div class="produto">
-          <h1>Produto 1</h1>
-          <img src="" alt="foto2" />
-          <p>Descrição do produto</p>
+          <h2>Caneca Inspiradora</h2>
+
+          <img 
+            src="./imagens/caneca-inspiradora.png" 
+            alt="Caneca branca com mensagem inspiradora"
+          />
+
+          <p>
+            Comece o seu dia com mais motivação! Uma caneca de cerâmica
+            resistente e elegante, perfeita para café, chá ou chocolate quente.
+          </p>
+
           <button>Comprar</button>
         </div>
+
         <div class="produto">
-          <h1>Produto 1</h1>
-          <img src="" alt="foto3" />
-          <p>Descrição do produto</p>
+          <h2>Sacola Eco</h2>
+
+          <img 
+            src="./imagens/sacola-eco.png" 
+            alt="Sacola reutilizável ecológica"
+          />
+
+          <p>
+            Uma sacola reutilizável, resistente e sustentável. Ideal para
+            compras, passeios e para transportar seus objetos com consciência
+            e respeito ao meio ambiente.
+          </p>
+
           <button>Comprar</button>
         </div>
+
       </div>
     </main>
   </body>
