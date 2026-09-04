@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumo</title>
-    <link rel="stylesheet" 
-    href="./assets/estilos/global.css">
+    <link rel="stylesheet" href="./assets/estilos/global.css">
 </head>
+<style>
+    hr {
+        border: 0px;
+    }
+</style>
 
 <body>
     <div class="container">
@@ -16,10 +20,34 @@
         <label> Cidade: </label><label id="cidade"> </label><br>
         <label> Estado: </label><label id="estado"> </label><br>
         <label> Cep: </label><label id="cep"> </label><br>
+
+        <hr>
+
+        <h1> Resumo dos produtos </h1>
+        <table>
+            <thead>
+                <tr>
+                    <th> Produto </th>
+                    <th> Quantidade </th>
+                    <th> Preço Total </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Havaianas </td>
+                    <td id="res_hav_quantidade"> 0 </td>
+                    <td id="res_hav_preco"> R$0.00 </td>
+                </tr>
+                <tr>
+                    <td> Alpargatas </td>
+                    <td id="res_alp_quantidade"> 0 </td>
+                    <td id="res_alp_preco"> R$0.00 </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <script type="text/javascript" 
-    src="./assets/scripts/resumo.js"></script>
+    <script type="text/javascript" src="./assets/scripts/resumo.js"></script>
 </body>
 
 </html>
