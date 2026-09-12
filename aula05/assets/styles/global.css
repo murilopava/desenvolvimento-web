@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
   display: flexbox;
   margin: 0px;
 }
@@ -7,41 +8,71 @@ body {
 header {
   display: flex;
   align-items: center;
+  padding: 15px 40px;
   justify-content: space-between;
-  background-color: rgb(126, 126, 126);
-  width: 100%; 
+  background-color: rgb(70, 69, 69);
 }
 
 header .title {
-  display: flex
-}
-
-
-main {
+  color: white;
   display: flex;
-  gap: 20px;
-  padding: 30px;
+  gap: 10px;
 }
 
 .container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+
+  background-color: white;
+
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+h1 {
   text-align: center;
 }
 
-.etapa {
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: gray;
-  height: 50px;
-  padding: 5px;
-  width: 200px;
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
-.etapa div {
-  background-color: lightgray;
-  width: 30px;
-  height: 30px;
-  align-self: center;
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+}
+
+.botao,
+button {
+  display: block;
+
+  margin-top: 20px;
+  padding: 10px;
+
+  background-color: #333333;
+  color: white;
+
   text-align: center;
-  border-radius: 100%;
-  margin: 10px;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.botao:hover,
+button:hover {
+  background-color: #555555;
 }
